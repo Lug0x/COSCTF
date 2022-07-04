@@ -15,6 +15,7 @@ Takazume.png
 ## Resolution : 
 
 Pour débuter nous pouvons remarquer que le titre du challenge nous donnes un grand indice.
+
 On peut traduire le nom "Takazume" en "Tu as qu'à zoomer", par la suite on peut également remarquer que dans les informations complèmentaire que les employés ne sont pas sensibilisés aux bonnes pratiques.
 
 En réunissans ces deux indices nous pouvons ouvrir l'image et commencer à l'analyser, nous remarquons qu'il y'a 2 post-it sur deux écrans différents.
