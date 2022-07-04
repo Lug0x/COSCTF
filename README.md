@@ -2,3 +2,4 @@
 
 Steganography :
 - [Takazume](https://github.com/Lug0x/COSCTF/tree/main/Steganography/Takazume)
+- [AudioSpectre](https://github.com/Lug0x/COSCTF/tree/main/Steganography/AudioSpectre)
