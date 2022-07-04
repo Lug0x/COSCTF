@@ -15,10 +15,9 @@ AudioSpectre.wav
 
 ## Resolution : 
 
-Reprenons les indices mis à notre dispositions :
+Indices mis à notre disposition :
 - Le nom du fichier qui est "Audi**Spectre**".
 - Dans les informations complémentaires, nous pouvons remarquer cette partie : **l'analyse de son spectre peut présenter tout autant d'intérêt**
-Par la suite dans les informations complémentaires, on nous dit qu'analyser le spectre peut donner des informations.
 
 Donc il faut analyser le spectre du fichier pour cela, j'ai utilisé [Audacity](https://audacity.fr/) qui permet d'analyser le fichier audio.
 
