@@ -14,7 +14,8 @@ Takazume.png
 
 ## Resolution : 
 
-En lisant l'information complèmentaire, on obtiens déjà un indice qui est : ** l'entreprise Takazume n'a pas suffisamment sensibilisé**.
-En ouvrant l'image, on remarque 2 post-it sur les écrans des utilisatrices et si on se fie au titre du challenge "Takazume" peut donner "tu as qu'à zoomer".
+Pour débuter nous pouvons remarquer que le titre du challenge nous donnes un grand indice.
+On peut traduire le nom "Takazume" en "Tu as qu'à zoomer", par la suite on peut également remarquer que dans les informations complèmentaire que les employés ne sont pas sensibilisés aux bonnes pratiques.
 
-En zoomant sur les post-it, on peut remarquer que sur le 3e bureau sur l'écran en bas à gauche un post-it contenant le flag qui est : `HACK{Be_careful_with_post_it}`
+En réunissans ces deux indices nous pouvons ouvrir l'image et commencer à l'analyser, nous remarquons qu'il y'a 2 post-it sur deux écrans différents.
+En zoomant sur le permier post-it nous obtenons une liste de course à effectuer mais en zoomant sur le deuxième post-it nous obtenons le flag suivant : `HACK{Be_careful_with_post_it}`
