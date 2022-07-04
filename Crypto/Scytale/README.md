@@ -23,4 +23,4 @@ J'ai rentré le contenu présent dans "message.txt" `Bj.lsC1_T!iolatKsSA.eueg.{_
 
 En cliquant sur "Déchiffrer la scytale", le site nous affiche les résultats à gauche. Celui qui nous intéresse est le premier résultat qui donne `Bien.jouée.le.flag.est.HACK{Th1s_1S_SP4RTAA}.!....`.
 
-Voici le flag final : `HACK{Th1s_1S_SP4RTAA}'
+Voici le flag final : `HACK{Th1s_1S_SP4RTAA}`

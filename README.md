@@ -6,9 +6,10 @@ Steganography :
 
 Web :
 - [SQL Project 1](https://github.com/Lug0x/COSCTF/tree/main/Web/SQL%20Project%201)
+- [Research paper blog](https://github.com/Lug0x/COSCTF/tree/main/Web/Rsearch%20paper%20blog)
 
 Crypto :
 - [Scytale](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Scytale)
 
 Forensic :
-- [Research Paper](https://github.com/Lug0x/COSCTF/tree/main/Forensic/Research%Paper%201)
+- [Research Paper](https://github.com/Lug0x/COSCTF/tree/main/Forensic/Research%Paper)

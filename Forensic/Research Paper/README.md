@@ -1,4 +1,4 @@
-# SQL Project 1
+# Research Paper
 
 ## Description :
 
