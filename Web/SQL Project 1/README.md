@@ -26,15 +26,15 @@ Je sais qu'il faut réaliser une injection SQL via le formulaire de connexion do
 - Password : toto
 
 J'obtiens donc : 
-![welcome demo](demo.png)
 
+![welcome demo](demo.png)
 
 J'arrive à obtenir un résultat pas trop mal mais ce n'est pas ça. En fouillant sur internet, j'ai remarqué qu'il manquait un truc dans mon injection sql dans beaucoup d'exemple j'ai remarqué que l'injection utilisé est : admin' or '1'='1 **--**# donc j'ai rajouté les "--" et enlevé le `'` en trop ce qui donne :
 - Username : admin' or '1'='1 -- #
 - Password : toto
 
 J'obtiens donc : 
+
 ![enjoy](enjoy.png)
 
-Voici le flag final : `HACK{B3_C4r3FuL_W1th_AUthentiC4tION}
-'
+Voici le flag final : `HACK{B3_C4r3FuL_W1th_AUthentiC4tION}`
