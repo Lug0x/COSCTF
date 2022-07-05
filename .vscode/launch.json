@@ -6,7 +6,7 @@
     "configurations": [
         {
             "args": [
-                "/workspaces/COSCTF/Crypto/test.xlsx",
+                "/workspaces/COSCTF/Crypto/Crypto/test.xlsx",
                 "toto"
             ],
             "name": "Python : fichier actif",
