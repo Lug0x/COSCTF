@@ -1,7 +1,6 @@
 # Research paper blog
 
 ## Description :
-
 Nous avons retrouvé l'identité de l'auteure de l'article. Malheureusement nous ne parvenons pas à la localiser.
 Cependant, nous avons découvert qu'elle voyage beaucoup pour participer à diverses conférences et elle est certainement en route vers l'une d'elle.
 Sur son site, il est fort probable que l'on puisse accéder à certaines informations qui ne sont pas publiques et qui nous permettraient de savoir quelle est sa prochaine destination.
@@ -15,7 +14,6 @@ https://paperblog.challenge.operation-kernel.fr/
 ---
 
 ## Resolution : 
-
 Indices mis à notre disposition :
 - Dans la description on nous dit qu'on peut accéder à des informations qui ne sont pas publiques.
 - Dans l'information complémentaire on nous indique que tous les articles ne sont pas directement lisible.

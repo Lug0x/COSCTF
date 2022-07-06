@@ -1,7 +1,6 @@
 # SQL Project 1
 
 ## Description :
-
 L'auteur d'un blog de sécurité informatique affirme que son site est parmi les plus sécurisés de tous et donc impénétrable. Ça ne coûte rien de vérifier une telle affirmation...
 
 ## Information complémentaire : 
@@ -15,7 +14,6 @@ secureblog.challenge.operation-kernel.fr
 ---
 
 ## Resolution : 
-
 Indices mis à notre disposition :
 - Le nom du challenge "Sql".
 - L'une des attaques les plus répandues sur les formulaires d'authentification en ligne reste l'injection SQL.

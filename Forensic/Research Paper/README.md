@@ -1,7 +1,6 @@
 # Research Paper
 
 ## Description :
-
 Un scientifique a publié un article sur une technologie nucléaire de pointe qui pourrait révolutionner le domaine de l’énergie
 
 Ces recherches, très novatrices, vont surement être convoitées par des personnes malveillantes et nous devons le retrouver pour le protéger.
@@ -17,7 +16,6 @@ paper-047e3cdb90edd.pdf
 ---
 
 ## Resolution : 
-
 Indice mis à notre disposition :
 - L'information complémentaire qui sonne comme une énigme.
 
