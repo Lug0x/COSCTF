@@ -13,50 +13,53 @@ blog.challenge.operation-kernel.fr
 ---
 
 ## Resolution : 
-
-login : Administrathor
-mdp : gH5pFtpm
-
-MichelInstafakegram42!
-
-
-
-
-Indices mis à notre disposition :
-- Dans l'information complémentaire on nous demande de récuperer le maximum d'information sur la personne.
-
-### Le blog
-Pour débuter on nous donnes un lien d'un blog https://blog.challenge.operation-kernel.fr/, quand je relis l'information complémentaire on parle d'un compte mail. Donc je vais sur la page contact, je remarque cette phrase "Si vous êtes intéresse contactez moi  : [ici](https://fakebook.challenge.operation-kernel.fr/)"
-
-### Le fakebook
-En cliquant sur le lien précédamment eu j'ai attérit sur la page fakebook de notre blogeur Aquemic. Sur cette page on peut récuprer des informations utiles pour la suite !
-- Prenom : Michel
-- Nom : Aquemoi
-- Date de naissance : 25 septembre 1988
-- Instagram : [Shopeors](https://instafakegram.challenge.operation-kernel.fr/)
-- Linkedin : [michel-aquemoi-19082216b](https://linkedfakein.challenge.operation-kernel.fr/)
-- Ville : Saint-Etienne
-
-Je décide donc d'aller fouiller son linkedin.
-
-### Le linkedin.
-En regardant sa page linkedin j'obtiens plusieurs informations importante pour la suite :
-- Email : michel.aquemoi@challenge.operation-kernel.fr
-- Travail : Séphori
-
-Et je remarque donc qu'il utilise le "futur gmail", qui me renvoie sur un site permettant de consulter ses mails (https://mail.challenge.operation-kernel.fr/login.php).
-
-### Le InstaFake
-Sur son instagram on peut remarquer qu'il aime beaucoup la box.
+Indice mis à notre disposition :
+- Il faut trouver un moyen de se connecter à ses autres comptes pour obtenir des informations. 
 
 ### Gmail du futur
-En arrivant sur le gmail du futur, je remarque qu'on a seulement 3 possibilités : Login / Register / Forgot Password. Et on nous demande dans l'énnoncé de récupérer le mail de la personne, je décide de cliquer sur "Forgot Password ?".
+En analysant les mails qu'il a réçu, il y en a deux qui ont particulièrement attirés mon attention :
+- "Account confirmation" de instafakegram.
+- "Votre nouveau compte" de fakebank.
 
-En allant sur cette page, je vois plusieurs question à l'écran permettant de me connecter avec le compte de l'utilisateur. Ca tombe bien grâce aux informations récupérés précédemment je peux répondre facilement aux questions.
+Dans le mail de instafakegram, je peux voir qu'il a reçu un récapitulatif de son compte contenant son adresse mail et son mot de passe :
+- email : michel.aquemoi@challenge.operation-kernel.fr
+- Mot de passe : MichelInstafakegram42!
 
-![question](social.png)
+Dans le mail de fakebank, il me donne juste l'identifiant de son compte qui est 3735928559 et un mot de passe qui a été généré aléatoirement pour la première connexion.
 
-Une fois connecté, je remarque un mail avec en titre "Confidentiel" je l'ouvre et je vois le flag !
+### Connexion aux autres comptes
+J'ai donc essayé de me connecter sur ses autres comptes disponibles, j'ai remarqué que dans son mot de passe instragam il met le nom du site. J'en déduit donc que son mot de passe est en général Michel{Nom du site}42!.
 
+- Fakebook : 
+    - login : michel.aquemoi@challenge.operation-kernel.fr
+    - Mot de passe : MichelFakebook42!
+    - Connexion : OK !
+- Blog :
+    - login : michel.aquemoi@challenge.operation-kernel.fr
+    - Mot de passe : MichelBlog42!
+    - Connexion : OK ! 
+- Linkedfakein : 
+    - login : michel.aquemoi@challenge.operation-kernel.fr
+    - Mot de passe : MichelLinkedfakein42!
+    - Connexion : OK !
+-Bank :
+    - login : michel.aquemoi@challenge.operation-kernel.fr
+    - Mot de passe : MichelFakeBank42!
+    - Connexion : KO !
 
-Voici le flag final : `HACK{SE_Inf0_Ar3_3veRyWH3R3}`
+Je remarque que le mot de passe ne fonctionne pas sur le site de la banque et qu'en me connectant sur le compte fakebook de la victime, j'ai accès à ses messages !
+
+Il a une conversation avec un Arnaud et il dit à Arnaud que son adresse dans 42 est découverte et qu'il va se faire discret dans le 69.
+
+Je me suis rappelé qu'il habitait à Saint-Etienne dont le code postal est "42" qui sont présents à la fin de ses mots de passe donc, je me dis qu'il est possible qu'il a juste mis "69" à la place de "42" pour son mot de passe de banque.
+
+Je test donc :
+
+- Bank :
+    - login : michel.aquemoi@challenge.operation-kernel.fr
+    - Mot de passe : MichelFakebank69!
+    - Connexion : OK !
+
+Bingo ! Ca fonctionne et j'obtiens le flag final !
+
+Voici le flag final : `HACK{M0r3_InF0_Y0u_H4v3_M0re_Y0u_C4n_G3T}`
