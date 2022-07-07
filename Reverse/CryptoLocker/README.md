@@ -26,19 +26,19 @@ Une fois Ghidra ouvert, j'ai inséré le fichier obtenu puis Ghidra l'a analysé
 
 ![step1](step1.png)
 
-J'ai remarqué qu'il y'avais plusieurs fonctions qui pourraient être intéressant comme : Main, GetData, Crypto, Base64Encode et Base64Decode. 
+J'ai remarqué qu'il y'avais plusieurs fonctions qui pourraient être intéressantes comme : Main, GetData, Crypto, Base64Encode et Base64Decode. 
 
-En allant dans la fonction "Main", j'ai remarqué qu'il y'avait un char encodé surement en base64. 
+En allant dans la fonction "Main", j'ai remarqué qu'il y'avait un string encodé surement en base64. 
 
 ![step2](step2.png)
 
 Je l'ai copié "aHR0cHM6Ly9jY29mZmVlLmNoYWxsZW5nZS5vcGVyYXRpb24ta2VybmVsLmZyL2My" et j'ai été sur [Base64 Decode](https://www.base64decode.org/). J'ai obtenu un site web https://ccoffee.challenge.operation-kernel.fr/c2.
 
-Maintenant que j'ai le site faut trouver le moyen de s'authentifier dessus. Je me suis donc intéressé à la fonction "Crypto" pour savoir comment fonctionne le logiciel et j'ai remarqué un autre char encodé également en base64.
+Maintenant que j'ai le site faut trouver le moyen de s'authentifier dessus. Je me suis donc intéressé à la fonction "Crypto" pour savoir comment fonctionne le binaire et j'ai remarqué une autre string encodée également en base64.
 
 ![step3](step3.png)
 
-J'ai copié le char "dXNlcj1ib3QmcGFzc3dvcmQ9VzBya18xbl9QUjBHUnM1", puis je l'ai également mis sur Base64 Decode. J'ai obtenu un login et un password dans ce format là : `user=bot&password=W0rk_1n_PR0GRs5`.
+J'ai copié la string "dXNlcj1ib3QmcGFzc3dvcmQ9VzBya18xbl9QUjBHUnM1", puis je l'ai également mis sur Base64 Decode. J'ai obtenu un login et un password dans ce format là : `user=bot&password=W0rk_1n_PR0GRs5`.
 
 Maintenant que j'ai le login et le mot de passe, j'ai essayé de me connecter au site. Ca fonctionne ! Donc j'ai juste scrollé la page et allant dans la partie "About" j'ai remarqué le flag qui était présent.
 
