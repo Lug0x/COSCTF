@@ -8,12 +8,15 @@ Web :
 - [SQL Project 1](https://github.com/Lug0x/COSCTF/tree/main/Web/SQL%20Project%201)
 - [Research paper blog](https://github.com/Lug0x/COSCTF/tree/main/Web/Research%20paper%20blog)
 - [CCoffee](https://github.com/Lug0x/COSCTF/tree/main/Web/CCoffee)
+- [Onion Kitten Part 1](https://github.com/Lug0x/COSCTF/tree/main/Web/Onion%20Kitten%20Part%201)
 
 Crypto :
 - [Scytale](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Scytale)
+- [Scytale](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Crypto)
 
 Forensic :
 - [Research Paper](https://github.com/Lug0x/COSCTF/tree/main/Forensic/Research%20Paper)
+- [Excel Confidential](https://github.com/Lug0x/COSCTF/tree/main/Forensic/Excel%20Confidential)
 
 Social Engineering :
 - [Pour vivre secure vivons caché](https://github.com/Lug0x/COSCTF/tree/main/Social%20engineering/Pour%20vivre%20secure%20vivons%20caché)
