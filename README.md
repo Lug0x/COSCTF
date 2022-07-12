@@ -12,7 +12,7 @@ Web :
 
 Crypto :
 - [Scytale](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Scytale)
-- [Scytale](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Crypto)
+- [Crypto](https://github.com/Lug0x/COSCTF/tree/main/Crypto/Crypto)
 
 Forensic :
 - [Research Paper](https://github.com/Lug0x/COSCTF/tree/main/Forensic/Research%20Paper)
