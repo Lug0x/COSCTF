@@ -10,7 +10,7 @@ class Decryptor(object):
             res.append(ac^bc)
         return res
 
-    def decipher(self, cipherfile):
+    def decrypt(self, cipherfile):
         while len(cipherfile)%16:
             cipherfile += b'\0'
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     print('Welcome to Decryptor')
     print('Start decrypting')
     cipherfile = open(args.file, 'rb').read()
-    plainfile = Decryptor().decipher(cipherfile)
+    plainfile = Decryptor().decrypt(cipherfile)
 
     ## Ecriture dans le fichier
     f = open("confidentiel.xlsx", 'wb')
