@@ -105,12 +105,17 @@ Je vois également une boucle for qui débute à 0, ce stop à la fin de la long
 
 Je remarque également qu'il ajoute à la variable encrypted qui utilise la méthode bytes permettant de convertir des objets en objets de type bytes. En effectuant un XOR du plaintext qui découpe en bloc de 16 octes et du CTR.
 
-Puis il augmente le CTR de 1 à chaque fois.
+<center>
 
+ ![XorHex](xorhex.png)
+
+</center>
+
+Je remarque également le "ctr +=1" permettant de l'augmenter de 1 à chaque fois.
 ### Solution.
 Grâce à l'analyse de la méthode "Encrypt", je sais que la variable encrypted peut me servir à déchiffrer le fichier sachant que sa valeur sera le premier bloc d'octet présent dans le fichier. 
 
-Avec un site comme [Hexed](https://hexed.it/) permettant d'analyser les octets d'un fichier en hexadecimal, je peux remarquer que la première ligne contient la valeur de la variable "encrypted".
+Avec un site comme [Hexed](https://hexed.it/) permettant d'analyser les octets d'un fichier en hexadecimal, grâce à mon analyse sur le code, je remarque que la première ligne contient la valeur de la variable "encrypted".
 ```
 00000000 74 63 9D 71 57 0D 80 F5 17 06 20 FB DD 72 BC DA
 00000010 24 28 9E 75 43 0D 86 F5 1F 06 20 FB FC 72 69 F7

@@ -43,21 +43,36 @@ Je continue à suivre les étapes et il parle d'une session php en allant direct
 
 Je me connecte au site https://ccoffee.challenge.operation-kernel.fr/c2 et en value dans le cookie style je mets ma session php `/../../../../../../../../../var/lib/php5/sess_ovi2i9lpk1ra9sulcq4bjlmhn4%00`, j'obtiens un résultat similaire que sur le tutoriel. 
 
+<center>
+
 ![step1](step1.png)
+
+</center>
 
 Il manque plus qu'à exécuter des commandes afin de pouvoir exploiter et retrouver notre flag. Je me dis l'endroit où on peut exécuter des commandes à partir du changement d'username surtout qu'il m'indique : 
 - Feature not totally implemented then this modification is only for the current session
 
+<center>
+
 ![exploit](exploit.png)
 
-Donc je fais un test, je mets "<?php system("cat /etc/passwd");?>" et je rafraichis ma page https://ccoffee.challenge.operation-kernel.fr et je vérifie le code source effectivement, j'ai bien le contenu du fichier. Donc la RCE fonctionne bien ! 
+</center>
 
-J'effectue un "ls -la" et je vois qu'il y'a un dossier "c2", donc j'effectue un "ls -la" de ce dossier. 
+Donc je fais un test, je mets `<?php system("cat /etc/passwd");?>` et je rafraichis ma page https://ccoffee.challenge.operation-kernel.fr et je vérifie le code source effectivement, j'ai bien le contenu du fichier. Donc la RCE fonctionne bien ! 
+
+J'effectue un `ls -la` et je vois qu'il y'a un dossier "c2", donc j'effectue un `ls -la` de ce dossier. 
+
+<center>
 
 ![step2](step2.png)
 
-Je remarque qu'il y'a un dossier "upload" donc je décide de faire un "ls -la c2/upload/" et je vois un fichier nommé "flag.txt".
+</center>
+
+Je remarque qu'il y'a un dossier "upload" donc je décide de faire un `ls -la c2/upload/` et je vois un fichier nommé "flag.txt".
+
+<center>
 
 ![flag](flag.png)
 
+</center>
 Voici le flag final : `HACK{(NerverTrust)UserInput+LFI=RCE}`
